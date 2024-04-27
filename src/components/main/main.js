@@ -14,8 +14,12 @@ export function renderMainPage(parentPageUrl) {
   const startButton = document.querySelector(".survey-container__button");
 
   startButton.addEventListener("click", () => {
+    const surveyData = {
+      page: parentPageUrl,
+      statistics: [],
+    };
     const questions = getPageQuestions(parentPageUrl);
 
-    renderSurveyPage(questions, 0, {});
+    renderSurveyPage(questions, 0, surveyData);
   });
 }
