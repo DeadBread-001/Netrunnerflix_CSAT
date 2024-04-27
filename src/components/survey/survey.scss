@@ -2,12 +2,58 @@
   &__scores {
     display: flex;
     margin-bottom: 16px;
+    gap: 8px;
   }
 
   &__score {
+    user-select: none;
+    font-size: var(--secondary-text);
+    height: 42px;
+    display: flex;
+    width: 32px;
+    font-family: var(--main-font);
+    border-radius: 8px;
     color: white;
-    margin: 8px;
-    gap: 4px;
-    background-color: #999999;
+    background-color: #606060;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: #999999;
+    }
+  }
+
+  &__score.active {
+    background-color: white;
+    color: black;
+  }
+
+  &__choice.active {
+    background-color: white;
+    color: black;
+  }
+
+  &__choices {
+    display: flex;
+    margin-bottom: 16px;
+    gap: 8px;
+    flex-direction: column;
+  }
+
+  &__choice {
+    font-size: var(--secondary-text);
+    height: 42px;
+    display: flex;
+    width: auto;
+    font-family: var(--main-font);
+    border-radius: 8px;
+    color: white;
+    background-color: #606060;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: #999999;
+    }
   }
 }

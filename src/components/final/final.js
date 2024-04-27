@@ -1,4 +1,4 @@
-import template from "./main.hbs";
+import template from "./final.hbs";
 import { renderSurveyPage } from "../survey/survey.js";
 
 /**
