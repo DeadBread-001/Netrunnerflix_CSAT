@@ -3,21 +3,25 @@
   background-color: var(--border-color);
   width: fit-content;
   flex-direction: column;
-  align-items: center;
-  border-radius: 8px;
-  padding: 32px;
+  border-radius: 16px;
+  padding: 24px;
 
   &__text {
+    width: 250px;
+    word-break: break-word;
+    font-family: var(--main-font);
     color: var(--white);
     margin-bottom: 16px;
   }
 
   &__button {
+    width: fit-content;
+    font-family: var(--main-font);
     background-color: var(--neon-main);
     border: none;
     border-radius: 8px;
     color: white;
-    padding: 8px 24px;
+    padding: 8px 8px;
     text-align: center;
     text-decoration: none;
     display: inline-block;

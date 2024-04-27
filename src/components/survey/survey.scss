@@ -1,0 +1,13 @@
+.survey-container {
+  &__scores {
+    display: flex;
+    margin-bottom: 16px;
+  }
+
+  &__score {
+    color: white;
+    margin: 8px;
+    gap: 4px;
+    background-color: #999999;
+  }
+}
