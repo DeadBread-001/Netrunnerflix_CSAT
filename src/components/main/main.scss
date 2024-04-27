@@ -1,0 +1,27 @@
+.survey-container {
+  display: flex;
+  background-color: var(--border-color);
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding: 32px;
+
+  &__text {
+    color: var(--white);
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    background-color: var(--neon-main);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
